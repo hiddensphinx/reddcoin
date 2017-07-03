@@ -43,7 +43,7 @@
 
 	cd reddcoin
 	./autogen.sh
-	./configure --with-gui=no --disable-tests	
+	./configure --with-gui=no --disable-tests CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib"
 
 #### Compile reddcoind/reddcoin-cli
 
